@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #666666;
+    background-color:#ff7f50;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+}
+
+p,
+li,
+a {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+p {
+    margin: 0 0 10px 0px;
+    font-size: 0.8rem;
+    font-family:Lobster;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.6;
+    font-family: Indie+Flower;
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #333333;
+    word-spacing: 2.0rem;
+    line-height: 2;
+    font-family: Indie+Flower;
+}
+
+h1 {
+    border: 3px solid;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #990000;
+    letter-spacing: 5px;
+    word-spacing: 3.0rem;
+    line-height: 2;
+}
+header{
+    background-image: url('img/springImg.jpg') ;
+}
+
+header h1 {
+    margin: 0 0 2rem 0;
+}
+
+nav li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    font-family: Lobster;
+}
+
+nav li a {
+    text-decoration: none;
+    background-color: #7F726d;
+    border-bottom: 1px solid #CCC;
+    padding: 1rem 0;
+    color: white;
+}
+
+nav li a:hover {
+    background-color: #CCC;
+    color: black;
+}
+
+footer {
+    background-color: #7F726D;
+    color: white;
+    float: none;
+    height: 40px;
+    padding-top: 3px;
+}
+
+/*********** media layout ********************/
+
+@media screen and (min-width: 35rem) and (max-width: 60rem) {
+    
+    .mainnav li {
+        float: left;
+        width: 25%;
+    }
+    img {
+        width: 50%;
+        float: right;
+        margin: 0 0 0.5rem 1rem;
+    }
+    p::after{
+        content: "";
+        display: block;
+        clear: right;
+    }
+    p{
+        font-size: 1rem;
+    }
+    main {
+        width: 63%;
+        float: left;
+        padding: 15px;
+    }
+    aside {
+        width: 37%;
+        float: right;
+        padding: 15px;
+    }
+    footer {
+        clear: both;
+    }
+    
+}
+
+
+     @media screen and (min-width: 61em) {
+         
+            .mainnav {
+                width: 25%;
+                height: 300px;
+                float:left;
+                display: inline-block;
+                padding: 10px;
+            }
+            img {
+                width: 50%;
+                float: right;
+                margin: 0 0 0.5rem 1rem;
+            }
+            p::after {
+                content: "";
+                display: block;
+                clear: right;
+            }
+            p{
+                margin: 0;
+                font-size: 1.5rem;
+            }
+            main {
+                width: 50%;
+                font-size: 1.5rem;
+                float: left;
+                display: inline-block;
+                padding: 10px;
+
+                -webkit-column-count: 2;
+                -webkit-column-gap: 2rem;
+            }
+            aside {
+                float: right;
+                width: 25%;
+                display: inline-block;
+                padding: 10px;
+                padding-right: 0px;
+            }
+            .footer{
+                clear:both;
+            }
+
+
+    } 
